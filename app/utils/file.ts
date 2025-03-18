@@ -1189,7 +1189,7 @@ export function uploadTextFile(
   const fileInput = document.createElement("input");
   fileInput.type = "file";
   fileInput.accept =
-    ".txt,.md,.js,.py,.html,.css,.json,.csv,.xml,.log,.sh,.bash,.zsh,.sql,.ini,.conf,.yaml,.yml,.toml,.tex,.c,.cpp,.h,.hpp,.java,.cs,.go,.rs,.php,.rb,.pl,.swift,.kt,.ts,.jsx,.tsx,.vue,.scss,.less,.bat,.ps1,.r,.m,.ipynb,.csr,.key,.pem,.crt,.cer,.rdp,.svg,Dockerfile";
+    "*";
 
   fileInput.onchange = async (event: any) => {
     const file = event.target.files[0];
